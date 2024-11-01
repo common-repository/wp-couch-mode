@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "wp-couch-mode";
+  src:url("../fonts/wp-couch-mode.eot");
+  src:url("../fonts/wp-couch-mode.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/wp-couch-mode.woff") format("woff"),
+    url("../fonts/wp-couch-mode.ttf") format("truetype"),
+    url("../fonts/wp-couch-mode.svg#wp-couch-mode") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "wp-couch-mode" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="wpcm-icon-"]:before,
+[class*=" wpcm-icon-"]:before {
+  font-family: "wp-couch-mode" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wpcm-icon-printer:before {
+  content: "a";
+}
+.wpcm-icon-cancel:before {
+  content: "b";
+}
+.wpcm-icon-resize-expand:before {
+  content: "c";
+}
+.wpcm-icon-font:before {
+  content: "d";
+}
+
+.wpcm-wrapper{
+    background:rgb(237, 237, 243);
+    with:100%;
+    height:100%;
+}
+a.wpcm-wrapper-link{
+	color:#000;
+	cursor:pointer;
+}	 
+.wpcm-overlay{
+    display:none;
+    color:#ffffff;
+    background-color: rgba(0,0,0,0.6); /*dim the background*/
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;	
+	z-index:99999;
+}
+.wpcm-width-auto{
+	width:auto;
+}
+.wpcm-overlay-wrapper{
+    width:90%;
+    height:80%;
+    position:relative;
+    top:6%;
+    color:#141414;
+    background:#ffffff;
+    margin:0 auto;
+    font-family:helvetica;
+    -moz-box-shadow:    0px 1px 12px 4px #000;
+    -webkit-box-shadow:  0px 1px 12px 4px #000;
+    box-shadow:          0px 1px 12px 4px #000;
+    padding:30px;
+}
+
+.wpcm-overlay-wrapper-full {
+    width:auto;
+    height:100%;
+    position:relative;
+    top:0%;
+    color:#141414;
+    background:#ffffff;
+    margin:0 auto;
+    font-family:helvetica;
+    -moz-box-shadow:    0px 1px 12px 4px #000;
+    -webkit-box-shadow:  0px 1px 12px 4px #000;
+    box-shadow:          0px 1px 12px 4px #000;
+    padding:30px;    
+}
+.wpcm-overlay-wrapper .wpcm_post_thumnail img{
+	width:100%;
+	margin-bottom:20px;
+}
+.wpcm-wrapper-content{
+    overflow-y:auto;
+    overflow-x:hidden;
+    max-height:90%;
+    width:99%;
+    padding:10px;
+}
+.wpcm-close-overlay{
+    position: absolute;
+	right: 0;
+	top: 0;
+
+}
+.wpcm-close-overlay #wpcm-resize-couch{
+	font-size:20px;
+	padding: 0 10px;
+	border-right:1px solid #DDDDDD;
+}
+.wpcm-close-overlay #wpcm-close-couch{
+	font-size: 30px;
+	padding: 0 10px;
+	vertical-align: middle;
+}
+.wpcm-close-overlay img{
+	cursor:pointer;
+	z-index: 99999;
+}
+.wpcm-loading > img {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    padding: 13px;
+}
+.wpcm-loading {
+    position: relative;
+    text-align: center;
+    top: 50%;
+}
+p{
+    margin-bottom:20px;
+}
+/*Scroll bars css*/
+.wpcm-overlay-wrapper{
+    scrollbar-base-color: #C0C0C0;
+    scrollbar-base-color: #C0C0C0;
+    scrollbar-3dlight-color: #C0C0C0;
+    scrollbar-highlight-color: #C0C0C0;
+    scrollbar-track-color: #EBEBEB;
+    scrollbar-arrow-color: black;
+    scrollbar-shadow-color: #C0C0C0;
+    scrollbar-dark-shadow-color: #C0C0C0;
+}
+.wpcm-overlay-wrapper p{
+	font-size:12px;
+}
+.wpcm-overlay-wrapper .wpcm-couch-icon{
+	color:#636962;
+	cursor:pointer;
+}
+.wpcm-overlay-wrapper .wpcm-couch-icon:hover{
+	color:#4d90fe;
+}
+.wpcm-in-fontsize{
+	font-size:20px;
+	padding: 0 0 0 5px;
+	border-right:1px solid #DDDDDD;
+	border-left:1px solid #DDDDDD;
+}
+.wpcm-de-fontsize{
+	font-size:16px;
+	padding:0 5px;	
+}
+.wpcm-icon-printer{
+	padding:0 5px;
+}
+.wpcm-overlay-wrapper::-webkit-scrollbar { width: 9px; height: 3px;}
+.wpcm-overlay-wrapper::-webkit-scrollbar-button {  background-color: #666; }
+.wpcm-overlay-wrapper::-webkit-scrollbar-track {  background-color: #999;}
+.wpcm-overlay-wrapper::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+.wpcm-overlay-wrapper::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+.wpcm-overlay-wrapper::-webkit-scrollbar-corner { background-color: #999;}
+.wpcm-overlay-wrapper::-webkit-resizer { background-color: #666;}
+/** Scroll Bar Ends*/
+@media print
+{
+    p.test {font-size:20px;color:red;}
+    .wpcm-overlay-wrapper{display:block;overflow:visible;box-shadow:none;width:670px;margin:0 auto;height:auto;text-align:justify;padding:0;}
+    .wpcm-overlay-print, #incfont, #decfont{display:none;}
+    .wpcm-close-overlay, .close-overlay>img{display:none;}
+    .wpcm-overlay{width:100%;}
+}
